@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="#3f51b5">
+  <script src="../_static/javascripts/modernizr.js"></script>
+  
+  <script>
+      window.ga = window.ga || function () {
+          (ga.q = ga.q || []).push(arguments)
+      };
+      ga.l = +new Date;
+      ga('create', 'G-F9LD9HL8LW', 'auto');
+      ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+  
+    <title>Python Examples &#8212; Kompute Documentation (Python &amp; C++)</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=75810a84" />
+    <link rel="stylesheet" type="text/css" href="../_static/material.css?v=79c92029" />
+    <link rel="stylesheet" type="text/css" href="../_static/assets/custom.css" />
+    <script src="../_static/documentation_options.js?v=39bb1c6d"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Kompute Mobile App Integration (Android)" href="mobile-android.html" />
+    <link rel="prev" title="Python Class Documentation &amp; Reference" href="python-reference.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=red data-md-color-accent=light-blue>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#overview/python-examples" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../index.html" title="Kompute Documentation (Python &amp; C++)"
+           class="md-header-nav__button md-logo">
+          
+            &nbsp;
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">Kompute Documentation (Python & C++)</span>
+          <span class="md-header-nav__topic"> Python Examples </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../search.html" method="GET" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder="Search"
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            <a href="https://github.com/KomputeProject/kompute/" title="Go to repository" class="md-source" data-md-source="github">
+
+    <div class="md-source__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="28" height="28">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Kompute
+  </div>
+</a>
+          </div>
+        </div>
+      
+      
+  
+  <script src="../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">Kompute Documentation (Python & C++)</a></li>
+            
+            <li class="md-tabs__item"><a href="https://github.com/KomputeProject/kompute/" class="md-tabs__link">Kompute Repo</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../index.html" title="Kompute Documentation (Python &amp; C++)" class="md-nav__button md-logo">
+      
+        <img src="../_static/" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../index.html"
+       title="Kompute Documentation (Python &amp; C++)">Kompute Documentation (Python & C++)</a>
+  </label>
+    <div class="md-nav__source">
+      <a href="https://github.com/KomputeProject/kompute/" title="Go to repository" class="md-source" data-md-source="github">
+
+    <div class="md-source__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="28" height="28">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Kompute
+  </div>
+</a>
+    </div>
+  
+  
+
+  
+  <ul class="md-nav__list">
+    <li class="md-nav__item">
+    
+      <span class="md-nav__link caption"><span class="caption-text">C++ Documentation:</span></span>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="https://kompute.cc/" class="md-nav__link">Documentation Home</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="community.html" class="md-nav__link">Community Meetings, Discord & Links</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+      <span class="md-nav__link caption"><span class="caption-text">C++ Documentation:</span></span>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="advanced-examples.html" class="md-nav__link">C++ Examples</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="memory-management.html" class="md-nav__link">Memory Management Principles</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="build-system.html" class="md-nav__link">Build System Deep Dive</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="shaders-to-headers.html" class="md-nav__link">Processing Shaders (Online & Offline)</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="custom-operations.html" class="md-nav__link">Extending Kompute with Custom Operations</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="reference.html" class="md-nav__link">C++ Class Documentation & Reference</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="https://kompute.cc/codecov/" class="md-nav__link">Test Code Coverage</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+      <span class="md-nav__link caption"><span class="caption-text">Python Documentation:</span></span>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="python-package.html" class="md-nav__link">Python Package Overview</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="python-reference.html" class="md-nav__link">Python Class Documentation & Reference</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+      <span class="md-nav__link caption"><span class="caption-text">Examples:</span></span>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <label class="md-nav__link md-nav__link--active" for="__toc"> Python Examples </label>
+    
+      <a href="#" class="md-nav__link md-nav__link--active">Python Examples</a>
+      
+        
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">Contents</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#overview-python-examples--page-root" class="md-nav__link">Python Examples</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#python-example-simple" class="md-nav__link">Python Example (Simple)</a>
+        </li>
+        <li class="md-nav__item"><a href="#python-example-extended" class="md-nav__link">Python Example (Extended)</a>
+        </li>
+        <li class="md-nav__item"><a href="#kompute-operation-capabilities" class="md-nav__link">Kompute Operation Capabilities</a>
+        </li>
+        <li class="md-nav__item"><a href="#machine-learning-logistic-regression-implementation" class="md-nav__link">Machine Learning Logistic Regression Implementation</a>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/overview/python-examples.rst.txt">Show Source</a> </li>
+
+  </ul>
+</nav>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="advanced-examples.html" class="md-nav__link">C++ Examples</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="mobile-android.html" class="md-nav__link">Android Mobile App Integration</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="raspberry-pi.html" class="md-nav__link">Edge Device Raspberry Pi Mesa Drivers</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="game-engine-godot.html" class="md-nav__link">Game Engine Godot Integration</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="matmul-benchmark.html" class="md-nav__link">Example Benchmark with Matrix Multiplication</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="convolutional-net.html" class="md-nav__link">Convolutional Neural Network (CNN) Simple Upscale</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+      <span class="md-nav__link caption"><span class="caption-text">Advanced Concepts &amp; Deep Dives:</span></span>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="ci-tests.html" class="md-nav__link">CI, Docker Images Docs & Tests</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="variable-types.html" class="md-nav__link">Variable Types for Tensors, and Push/Spec Constants</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="async-parallel.html" class="md-nav__link">Asynchronous & Parallel Operations</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../genindex.html" class="md-nav__link">Code Index</a>
+      
+    
+    </li>
+  </ul>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">Contents</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#overview-python-examples--page-root" class="md-nav__link">Python Examples</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#python-example-simple" class="md-nav__link">Python Example (Simple)</a>
+        </li>
+        <li class="md-nav__item"><a href="#python-example-extended" class="md-nav__link">Python Example (Extended)</a>
+        </li>
+        <li class="md-nav__item"><a href="#kompute-operation-capabilities" class="md-nav__link">Kompute Operation Capabilities</a>
+        </li>
+        <li class="md-nav__item"><a href="#machine-learning-logistic-regression-implementation" class="md-nav__link">Machine Learning Logistic Regression Implementation</a>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/overview/python-examples.rst.txt">Show Source</a> </li>
+
+<li id="searchbox" class="md-nav__item"></li>
+
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  <section id="python-examples">
+<h1 id="overview-python-examples--page-root">Python Examples<a class="headerlink" href="#overview-python-examples--page-root" title="Link to this heading">¶</a></h1>
+<p>This section contains simple and advanced examples using the Python Kompute class. For an overview of the module check <a class="reference external" href="python-package.html">Python Package Overview</a>, for a deep dive into functions check the <a class="reference external" href="python-reference.html">Python Class Reference Section</a>.</p>
+<p>You will be able to run the examples below by installing the dependencies in <cite>python/test/requirements-dev.txt</cite></p>
+<section id="python-example-simple">
+<h2 id="python-example-simple">Python Example (Simple)<a class="headerlink" href="#python-example-simple" title="Link to this heading">¶</a></h2>
+<p>Then you can interact with it from your interpreter. Below is the same sample as above “Your First Kompute (Simple Version)” but in Python:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="kn">from</span><span class="w"> </span><span class="nn">kp</span><span class="w"> </span><span class="kn">import</span> <span class="n">Manager</span><span class="p">,</span> <span class="n">Tensor</span><span class="p">,</span> <span class="n">OpTensorSyncDevice</span><span class="p">,</span> <span class="n">OpTensorSyncLocal</span><span class="p">,</span> <span class="n">OpAlgoDispatch</span>
+<span class="linenos"> 2</span><span class="kn">from</span><span class="w"> </span><span class="nn">pyshader</span><span class="w"> </span><span class="kn">import</span> <span class="n">python2shader</span><span class="p">,</span> <span class="n">ivec3</span><span class="p">,</span> <span class="n">f32</span><span class="p">,</span> <span class="n">Array</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="n">mgr</span> <span class="o">=</span> <span class="n">Manager</span><span class="p">()</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="c1"># Can be initialized with List[] or np.Array</span>
+<span class="linenos"> 7</span><span class="n">tensor_in_a</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="linenos"> 8</span><span class="n">tensor_in_b</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="linenos"> 9</span><span class="n">tensor_out</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="n">sq</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">sequence</span><span class="p">()</span>
+<span class="linenos">12</span>
+<span class="linenos">13</span><span class="n">sq</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">OpTensorSyncDevice</span><span class="p">([</span><span class="n">tensor_in_a</span><span class="p">,</span> <span class="n">tensor_in_b</span><span class="p">,</span> <span class="n">tensor_out</span><span class="p">]))</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span><span class="c1"># Define the function via PyShader or directly as glsl string or spirv bytes</span>
+<span class="linenos">16</span><span class="nd">@python2shader</span>
+<span class="linenos">17</span><span class="k">def</span><span class="w"> </span><span class="nf">compute_shader_multiply</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="p">(</span><span class="s2">"input"</span><span class="p">,</span> <span class="s2">"GlobalInvocationId"</span><span class="p">,</span> <span class="n">ivec3</span><span class="p">),</span>
+<span class="linenos">18</span>                            <span class="n">data1</span><span class="o">=</span><span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">)),</span>
+<span class="linenos">19</span>                            <span class="n">data2</span><span class="o">=</span><span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">)),</span>
+<span class="linenos">20</span>                            <span class="n">data3</span><span class="o">=</span><span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">))):</span>
+<span class="linenos">21</span>    <span class="n">i</span> <span class="o">=</span> <span class="n">index</span><span class="o">.</span><span class="n">x</span>
+<span class="linenos">22</span>    <span class="n">data3</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">data1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">data2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span><span class="n">algo</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">algorithm</span><span class="p">([</span><span class="n">tensor_in_a</span><span class="p">,</span> <span class="n">tensor_in_b</span><span class="p">,</span> <span class="n">tensor_out</span><span class="p">],</span> <span class="n">compute_shader_multiply</span><span class="o">.</span><span class="n">to_spirv</span><span class="p">())</span>
+<span class="linenos">25</span>
+<span class="linenos">26</span><span class="c1"># Run shader operation synchronously</span>
+<span class="linenos">27</span><span class="n">sq</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">OpAlgoDispatch</span><span class="p">(</span><span class="n">algo</span><span class="p">))</span>
+<span class="linenos">28</span><span class="n">sq</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">OpTensorSyncLocal</span><span class="p">([</span><span class="n">tensor_out</span><span class="p">]))</span>
+<span class="linenos">29</span>
+<span class="linenos">30</span><span class="k">assert</span> <span class="n">tensor_out</span><span class="o">.</span><span class="n">data</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span> <span class="o">==</span> <span class="p">[</span><span class="mf">2.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="python-example-extended">
+<h2 id="python-example-extended">Python Example (Extended)<a class="headerlink" href="#python-example-extended" title="Link to this heading">¶</a></h2>
+<p>Similarly you can find the same extended example as above:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">kp</span><span class="w"> </span><span class="kn">import</span> <span class="n">Manager</span><span class="p">,</span> <span class="n">Tensor</span>
+<span class="linenos"> 2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">kp</span>
+<span class="linenos"> 3</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pyshader</span><span class="w"> </span><span class="kn">import</span> <span class="n">python2shader</span><span class="p">,</span> <span class="n">ivec3</span><span class="p">,</span> <span class="n">f32</span><span class="p">,</span> <span class="n">Array</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span> <span class="n">mgr</span> <span class="o">=</span> <span class="n">Manager</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span> <span class="c1"># Can be initialized with List[] or np.Array</span>
+<span class="linenos"> 8</span> <span class="n">tensor_in_a</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="linenos"> 9</span> <span class="n">tensor_in_b</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span> <span class="c1"># By default, tensors use a float type, but that can be explicitly specified</span>
+<span class="linenos">12</span> <span class="n">tensor_out</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor_t</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+<span class="linenos">13</span> <span class="k">assert</span><span class="p">(</span><span class="n">tensor_out</span><span class="o">.</span><span class="n">data_type</span><span class="p">()</span> <span class="o">==</span> <span class="n">kp</span><span class="o">.</span><span class="n">DataTypes</span><span class="o">.</span><span class="n">float</span><span class="p">)</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span> <span class="n">seq</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">sequence</span><span class="p">()</span>
+<span class="linenos">16</span> <span class="n">seq</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpTensorSyncDevice</span><span class="p">([</span><span class="n">tensor_in_a</span><span class="p">,</span> <span class="n">tensor_in_b</span><span class="p">,</span> <span class="n">tensor_out</span><span class="p">]))</span>
+<span class="linenos">17</span>
+<span class="linenos">18</span> <span class="c1"># Define the function via PyShader or directly as glsl string or spirv bytes</span>
+<span class="linenos">19</span> <span class="nd">@python2shader</span>
+<span class="linenos">20</span> <span class="k">def</span><span class="w"> </span><span class="nf">compute_shader_multiply</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="p">(</span><span class="s2">"input"</span><span class="p">,</span> <span class="s2">"GlobalInvocationId"</span><span class="p">,</span> <span class="n">ivec3</span><span class="p">),</span>
+<span class="linenos">21</span>                             <span class="n">data1</span><span class="o">=</span><span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">)),</span>
+<span class="linenos">22</span>                             <span class="n">data2</span><span class="o">=</span><span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">)),</span>
+<span class="linenos">23</span>                             <span class="n">data3</span><span class="o">=</span><span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">))):</span>
+<span class="linenos">24</span>     <span class="n">i</span> <span class="o">=</span> <span class="n">index</span><span class="o">.</span><span class="n">x</span>
+<span class="linenos">25</span>     <span class="n">data3</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">data1</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">data2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="linenos">26</span>
+<span class="linenos">27</span> <span class="n">algo</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">algorithm</span><span class="p">([</span><span class="n">tensor_in_a</span><span class="p">,</span> <span class="n">tensor_in_b</span><span class="p">,</span> <span class="n">tensor_out</span><span class="p">],</span> <span class="n">compute_shader_multiply</span><span class="o">.</span><span class="n">to_spirv</span><span class="p">())</span>
+<span class="linenos">28</span>
+<span class="linenos">29</span> <span class="c1"># Run shader operation asynchronously and then await</span>
+<span class="linenos">30</span> <span class="n">seq</span><span class="o">.</span><span class="n">eval_async</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpAlgoDispatch</span><span class="p">(</span><span class="n">algo</span><span class="p">))</span>
+<span class="linenos">31</span> <span class="n">seq</span><span class="o">.</span><span class="n">eval_await</span><span class="p">()</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span> <span class="n">seq</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpTensorSyncLocal</span><span class="p">([</span><span class="n">tensor_in_a</span><span class="p">]))</span>
+<span class="linenos">34</span> <span class="n">seq</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpTensorSyncLocal</span><span class="p">([</span><span class="n">tensor_in_b</span><span class="p">]))</span>
+<span class="linenos">35</span> <span class="n">seq</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpTensorSyncLocal</span><span class="p">([</span><span class="n">tensor_out</span><span class="p">]))</span>
+<span class="linenos">36</span>
+<span class="linenos">37</span> <span class="n">seq</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+<span class="linenos">38</span>
+<span class="linenos">39</span> <span class="k">assert</span> <span class="n">tensor_out</span><span class="o">.</span><span class="n">data</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span> <span class="o">==</span> <span class="p">[</span><span class="mf">2.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="mf">6.0</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="kompute-operation-capabilities">
+<h2 id="kompute-operation-capabilities">Kompute Operation Capabilities<a class="headerlink" href="#kompute-operation-capabilities" title="Link to this heading">¶</a></h2>
+<p>Handling multiple capabilites of processing can be done by compute shaders being loaded into separate sequences. The example below shows how this can be done:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">kp</span><span class="w"> </span><span class="kn">import</span> <span class="n">Manager</span>
+<span class="linenos"> 2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">kp</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span> <span class="c1"># We'll assume we have the shader data available</span>
+<span class="linenos"> 5</span> <span class="kn">from</span><span class="w"> </span><span class="nn">my_spv_shader_data</span><span class="w"> </span><span class="kn">import</span> <span class="n">mult_shader</span><span class="p">,</span> <span class="n">sum_shader</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span> <span class="n">mgr</span> <span class="o">=</span> <span class="n">Manager</span><span class="p">()</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span> <span class="n">t1</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="linenos">10</span> <span class="n">t2</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="linenos">11</span> <span class="n">t3</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="linenos">12</span>
+<span class="linenos">13</span> <span class="n">mgr</span><span class="o">.</span><span class="n">sequence</span><span class="p">()</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpTensorSyncLocal</span><span class="p">([</span><span class="n">t1</span><span class="p">,</span> <span class="n">t3</span><span class="p">]))</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span> <span class="c1"># Create multiple separate sequences</span>
+<span class="linenos">16</span> <span class="n">sq_mult</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">sequence</span><span class="p">()</span>
+<span class="linenos">17</span> <span class="n">sq_sum</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">sequence</span><span class="p">()</span>
+<span class="linenos">18</span> <span class="n">sq_sync</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">sequence</span><span class="p">()</span>
+<span class="linenos">19</span>
+<span class="linenos">20</span> <span class="n">sq_mult</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpAlgoDispatch</span><span class="p">(</span><span class="n">mgr</span><span class="o">.</span><span class="n">algorithm</span><span class="p">([</span><span class="n">t1</span><span class="p">,</span> <span class="n">t2</span><span class="p">,</span> <span class="n">t3</span><span class="p">],</span> <span class="n">add_shader</span><span class="p">))</span>
+<span class="linenos">21</span>
+<span class="linenos">22</span> <span class="n">sq_sum</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpAlgoDispatch</span><span class="p">(</span><span class="n">mgr</span><span class="o">.</span><span class="n">algorithm</span><span class="p">([</span><span class="n">t3</span><span class="p">,</span> <span class="n">t2</span><span class="p">,</span> <span class="n">t1</span><span class="p">],</span> <span class="n">sum_shader</span><span class="p">))</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span> <span class="n">sq_sync</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpTensorSyncLocal</span><span class="p">([</span><span class="n">t1</span><span class="p">,</span> <span class="n">t3</span><span class="p">]))</span>
+<span class="linenos">25</span>
+<span class="linenos">26</span> <span class="c1"># Run multiple iterations</span>
+<span class="linenos">27</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<span class="linenos">28</span>     <span class="n">sq_mult</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+<span class="linenos">29</span>     <span class="n">sq_sum</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+<span class="linenos">30</span>
+<span class="linenos">31</span> <span class="n">sq_sync</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span> <span class="nb">print</span><span class="p">(</span><span class="n">t1</span><span class="o">.</span><span class="n">data</span><span class="p">(),</span> <span class="n">t2</span><span class="o">.</span><span class="n">data</span><span class="p">(),</span> <span class="n">t3</span><span class="o">.</span><span class="n">data</span><span class="p">())</span>
+</pre></div>
+</div>
+</section>
+<section id="machine-learning-logistic-regression-implementation">
+<h2 id="machine-learning-logistic-regression-implementation">Machine Learning Logistic Regression Implementation<a class="headerlink" href="#machine-learning-logistic-regression-implementation" title="Link to this heading">¶</a></h2>
+<p>Similar to the logistic regression implementation in the C++ examples section, below you can find the Python implementation of the Logistic Regression algorithm.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">  1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">kp</span><span class="w"> </span><span class="kn">import</span> <span class="n">Manager</span><span class="p">,</span> <span class="n">Tensor</span>
+<span class="linenos">  2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">kp</span>
+<span class="linenos">  3</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pyshader</span><span class="w"> </span><span class="kn">import</span> <span class="n">python2shader</span><span class="p">,</span> <span class="n">ivec3</span><span class="p">,</span> <span class="n">f32</span><span class="p">,</span> <span class="n">Array</span>
+<span class="linenos">  4</span>
+<span class="linenos">  5</span> <span class="nd">@python2shader</span>
+<span class="linenos">  6</span> <span class="k">def</span><span class="w"> </span><span class="nf">compute_shader</span><span class="p">(</span>
+<span class="linenos">  7</span>         <span class="n">index</span>   <span class="o">=</span> <span class="p">(</span><span class="s2">"input"</span><span class="p">,</span> <span class="s2">"GlobalInvocationId"</span><span class="p">,</span> <span class="n">ivec3</span><span class="p">),</span>
+<span class="linenos">  8</span>         <span class="n">x_i</span>     <span class="o">=</span> <span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">)),</span>
+<span class="linenos">  9</span>         <span class="n">x_j</span>     <span class="o">=</span> <span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">)),</span>
+<span class="linenos"> 10</span>         <span class="n">y</span>       <span class="o">=</span> <span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">)),</span>
+<span class="linenos"> 11</span>         <span class="n">w_in</span>    <span class="o">=</span> <span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">)),</span>
+<span class="linenos"> 12</span>         <span class="n">w_out_i</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">)),</span>
+<span class="linenos"> 13</span>         <span class="n">w_out_j</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">)),</span>
+<span class="linenos"> 14</span>         <span class="n">b_in</span>    <span class="o">=</span> <span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">)),</span>
+<span class="linenos"> 15</span>         <span class="n">b_out</span>   <span class="o">=</span> <span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">)),</span>
+<span class="linenos"> 16</span>         <span class="n">l_out</span>   <span class="o">=</span> <span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">)),</span>
+<span class="linenos"> 17</span>         <span class="n">M</span>       <span class="o">=</span> <span class="p">(</span><span class="s2">"buffer"</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="n">Array</span><span class="p">(</span><span class="n">f32</span><span class="p">))):</span>
+<span class="linenos"> 18</span>
+<span class="linenos"> 19</span>     <span class="n">i</span> <span class="o">=</span> <span class="n">index</span><span class="o">.</span><span class="n">x</span>
+<span class="linenos"> 20</span>
+<span class="linenos"> 21</span>     <span class="n">m</span> <span class="o">=</span> <span class="n">M</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="linenos"> 22</span>
+<span class="linenos"> 23</span>     <span class="n">w_curr</span> <span class="o">=</span> <span class="n">vec2</span><span class="p">(</span><span class="n">w_in</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">w_in</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="linenos"> 24</span>     <span class="n">b_curr</span> <span class="o">=</span> <span class="n">b_in</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="linenos"> 25</span>
+<span class="linenos"> 26</span>     <span class="n">x_curr</span> <span class="o">=</span> <span class="n">vec2</span><span class="p">(</span><span class="n">x_i</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">x_j</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+<span class="linenos"> 27</span>     <span class="n">y_curr</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="linenos"> 28</span>
+<span class="linenos"> 29</span>     <span class="n">z_dot</span> <span class="o">=</span> <span class="n">w_curr</span> <span class="o">@</span> <span class="n">x_curr</span>
+<span class="linenos"> 30</span>     <span class="n">z</span> <span class="o">=</span> <span class="n">z_dot</span> <span class="o">+</span> <span class="n">b_curr</span>
+<span class="linenos"> 31</span>     <span class="n">y_hat</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">z</span><span class="p">))</span>
+<span class="linenos"> 32</span>
+<span class="linenos"> 33</span>     <span class="n">d_z</span> <span class="o">=</span> <span class="n">y_hat</span> <span class="o">-</span> <span class="n">y_curr</span>
+<span class="linenos"> 34</span>     <span class="n">d_w</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">/</span> <span class="n">m</span><span class="p">)</span> <span class="o">*</span> <span class="n">x_curr</span> <span class="o">*</span> <span class="n">d_z</span>
+<span class="linenos"> 35</span>     <span class="n">d_b</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">/</span> <span class="n">m</span><span class="p">)</span> <span class="o">*</span> <span class="n">d_z</span>
+<span class="linenos"> 36</span>
+<span class="linenos"> 37</span>     <span class="n">loss</span> <span class="o">=</span> <span class="o">-</span><span class="p">((</span><span class="n">y_curr</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="n">y_hat</span><span class="p">))</span> <span class="o">+</span> <span class="p">((</span><span class="mf">1.0</span> <span class="o">+</span> <span class="n">y_curr</span><span class="p">)</span> <span class="o">*</span> <span class="n">log</span><span class="p">(</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">y_hat</span><span class="p">)))</span>
+<span class="linenos"> 38</span>
+<span class="linenos"> 39</span>     <span class="n">w_out_i</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">d_w</span><span class="o">.</span><span class="n">x</span>
+<span class="linenos"> 40</span>     <span class="n">w_out_j</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">d_w</span><span class="o">.</span><span class="n">y</span>
+<span class="linenos"> 41</span>     <span class="n">b_out</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">d_b</span>
+<span class="linenos"> 42</span>     <span class="n">l_out</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">loss</span>
+<span class="linenos"> 43</span>
+<span class="linenos"> 44</span>
+<span class="linenos"> 45</span> <span class="n">mgr</span> <span class="o">=</span> <span class="n">Manager</span><span class="p">()</span>
+<span class="linenos"> 46</span>
+<span class="linenos"> 47</span> <span class="c1"># First we create input and ouput tensors for shader</span>
+<span class="linenos"> 48</span> <span class="n">tensor_x_i</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
+<span class="linenos"> 49</span> <span class="n">tensor_x_j</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
+<span class="linenos"> 50</span>
+<span class="linenos"> 51</span> <span class="n">tensor_y</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
+<span class="linenos"> 52</span>
+<span class="linenos"> 53</span> <span class="n">tensor_w_in</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">])</span>
+<span class="linenos"> 54</span> <span class="n">tensor_w_out_i</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="linenos"> 55</span> <span class="n">tensor_w_out_j</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="linenos"> 56</span>
+<span class="linenos"> 57</span> <span class="n">tensor_b_in</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">])</span>
+<span class="linenos"> 58</span> <span class="n">tensor_b_out</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="linenos"> 59</span>
+<span class="linenos"> 60</span> <span class="n">tensor_l_out</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">])</span>
+<span class="linenos"> 61</span>
+<span class="linenos"> 62</span> <span class="n">tensor_m</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span> <span class="mf">5.0</span> <span class="p">])</span>
+<span class="linenos"> 63</span>
+<span class="linenos"> 64</span> <span class="c1"># We store them in an array for easier interaction</span>
+<span class="linenos"> 65</span> <span class="n">params</span> <span class="o">=</span> <span class="p">[</span><span class="n">tensor_x_i</span><span class="p">,</span> <span class="n">tensor_x_j</span><span class="p">,</span> <span class="n">tensor_y</span><span class="p">,</span> <span class="n">tensor_w_in</span><span class="p">,</span> <span class="n">tensor_w_out_i</span><span class="p">,</span>
+<span class="linenos"> 66</span>     <span class="n">tensor_w_out_j</span><span class="p">,</span> <span class="n">tensor_b_in</span><span class="p">,</span> <span class="n">tensor_b_out</span><span class="p">,</span> <span class="n">tensor_l_out</span><span class="p">,</span> <span class="n">tensor_m</span><span class="p">]</span>
+<span class="linenos"> 67</span>
+<span class="linenos"> 68</span> <span class="n">sq</span><span class="o">.</span><span class="n">sequence</span><span class="p">()</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpTensorSyncDevice</span><span class="p">(</span><span class="n">params</span><span class="p">))</span>
+<span class="linenos"> 69</span>
+<span class="linenos"> 70</span> <span class="c1"># Record commands for efficient evaluation</span>
+<span class="linenos"> 71</span> <span class="n">sq</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">sequence</span><span class="p">()</span>
+<span class="linenos"> 72</span>
+<span class="linenos"> 73</span> <span class="n">sq</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpTensorSyncDevice</span><span class="p">([</span><span class="n">tensor_w_in</span><span class="p">,</span> <span class="n">tensor_b_in</span><span class="p">]))</span>
+<span class="linenos"> 74</span> <span class="n">sq</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpAlgoDispatch</span><span class="p">(</span><span class="n">mgr</span><span class="o">.</span><span class="n">algorithm</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">compute_shader</span><span class="o">.</span><span class="n">to_spirv</span><span class="p">())))</span>
+<span class="linenos"> 75</span> <span class="n">sq</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpTensorSyncLocal</span><span class="p">([</span><span class="n">tensor_w_out_i</span><span class="p">,</span> <span class="n">tensor_w_out_j</span><span class="p">,</span> <span class="n">tensor_b_out</span><span class="p">,</span> <span class="n">tensor_l_out</span><span class="p">]))</span>
+<span class="linenos"> 76</span>
+<span class="linenos"> 77</span> <span class="n">ITERATIONS</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="linenos"> 78</span> <span class="n">learning_rate</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="linenos"> 79</span>
+<span class="linenos"> 80</span> <span class="c1"># Perform machine learning training and inference across all input X and Y</span>
+<span class="linenos"> 81</span> <span class="k">for</span> <span class="n">i_iter</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ITERATIONS</span><span class="p">):</span>
+<span class="linenos"> 82</span>     <span class="n">sq</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+<span class="linenos"> 83</span>
+<span class="linenos"> 84</span>     <span class="c1"># Calculate the parameters based on the respective derivatives calculated</span>
+<span class="linenos"> 85</span>     <span class="n">w_in_i_val</span> <span class="o">=</span> <span class="n">tensor_w_in</span><span class="o">.</span><span class="n">data</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="linenos"> 86</span>     <span class="n">w_in_j_val</span> <span class="o">=</span> <span class="n">tensor_w_in</span><span class="o">.</span><span class="n">data</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+<span class="linenos"> 87</span>     <span class="n">b_in_val</span> <span class="o">=</span> <span class="n">tensor_b_in</span><span class="o">.</span><span class="n">data</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="linenos"> 88</span>
+<span class="linenos"> 89</span>     <span class="k">for</span> <span class="n">j_iter</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">tensor_b_out</span><span class="o">.</span><span class="n">size</span><span class="p">()):</span>
+<span class="linenos"> 90</span>         <span class="n">w_in_i_val</span> <span class="o">-=</span> <span class="n">learning_rate</span> <span class="o">*</span> <span class="n">tensor_w_out_i</span><span class="o">.</span><span class="n">data</span><span class="p">()[</span><span class="n">j_iter</span><span class="p">]</span>
+<span class="linenos"> 91</span>         <span class="n">w_in_j_val</span> <span class="o">-=</span> <span class="n">learning_rate</span> <span class="o">*</span> <span class="n">tensor_w_out_j</span><span class="o">.</span><span class="n">data</span><span class="p">()[</span><span class="n">j_iter</span><span class="p">]</span>
+<span class="linenos"> 92</span>         <span class="n">b_in_val</span> <span class="o">-=</span> <span class="n">learning_rate</span> <span class="o">*</span> <span class="n">tensor_b_out</span><span class="o">.</span><span class="n">data</span><span class="p">()[</span><span class="n">j_iter</span><span class="p">]</span>
+<span class="linenos"> 93</span>
+<span class="linenos"> 94</span>     <span class="c1"># Update the parameters to process inference again</span>
+<span class="linenos"> 95</span>     <span class="n">tensor_w_in</span><span class="o">.</span><span class="n">set_data</span><span class="p">([</span><span class="n">w_in_i_val</span><span class="p">,</span> <span class="n">w_in_j_val</span><span class="p">])</span>
+<span class="linenos"> 96</span>     <span class="n">tensor_b_in</span><span class="o">.</span><span class="n">set_data</span><span class="p">([</span><span class="n">b_in_val</span><span class="p">])</span>
+<span class="linenos"> 97</span>
+<span class="linenos"> 98</span> <span class="k">assert</span> <span class="n">tensor_w_in</span><span class="o">.</span><span class="n">data</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">0.01</span>
+<span class="linenos"> 99</span> <span class="k">assert</span> <span class="n">tensor_w_in</span><span class="o">.</span><span class="n">data</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">0.0</span>
+<span class="linenos">100</span> <span class="k">assert</span> <span class="n">tensor_w_in</span><span class="o">.</span><span class="n">data</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mf">1.5</span>
+<span class="linenos">101</span> <span class="k">assert</span> <span class="n">tensor_b_in</span><span class="o">.</span><span class="n">data</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">0.7</span>
+<span class="linenos">102</span>
+<span class="linenos">103</span> <span class="c1"># Print outputs</span>
+<span class="linenos">104</span> <span class="nb">print</span><span class="p">(</span><span class="n">tensor_w_in</span><span class="o">.</span><span class="n">data</span><span class="p">())</span>
+<span class="linenos">105</span> <span class="nb">print</span><span class="p">(</span><span class="n">tensor_b_in</span><span class="o">.</span><span class="n">data</span><span class="p">())</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="python-reference.html" title="Python Class Documentation &amp; Reference"
+               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+               rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span
+                      class="md-footer-nav__direction"> Previous </span> Python Class Documentation &amp; Reference </span>
+              </div>
+            </a>
+          
+          
+            <a href="mobile-android.html" title="Kompute Mobile App Integration (Android)"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> Next </span> Kompute Mobile App Integration (Android) </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2020, The Institute for Ethical AI &amp; Machine Learning.
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 9.0.4.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>

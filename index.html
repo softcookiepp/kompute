@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="#3f51b5">
+  <script src="_static/javascripts/modernizr.js"></script>
+  
+  <script>
+      window.ga = window.ga || function () {
+          (ga.q = ga.q || []).push(arguments)
+      };
+      ga.l = +new Date;
+      ga('create', 'G-F9LD9HL8LW', 'auto');
+      ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+  
+    <title>Kompute Docs Home &#8212; Kompute Documentation (Python &amp; C++)</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=75810a84" />
+    <link rel="stylesheet" type="text/css" href="_static/material.css?v=79c92029" />
+    <link rel="stylesheet" type="text/css" href="_static/assets/custom.css" />
+    <script src="_static/documentation_options.js?v=39bb1c6d"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Community Meetings, Channels &amp; Resources" href="overview/community.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=red data-md-color-accent=light-blue>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#index" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="#" title="Kompute Documentation (Python &amp; C++)"
+           class="md-header-nav__button md-logo">
+          
+            &nbsp;
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">Kompute Documentation (Python & C++)</span>
+          <span class="md-header-nav__topic"> Kompute Docs Home </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="search.html" method="GET" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder="Search"
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            <a href="https://github.com/KomputeProject/kompute/" title="Go to repository" class="md-source" data-md-source="github">
+
+    <div class="md-source__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="28" height="28">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Kompute
+  </div>
+</a>
+          </div>
+        </div>
+      
+      
+  
+  <script src="_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = ""versions.json"",
+        target_loc = "../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="#" class="md-tabs__link">Kompute Documentation (Python & C++)</a></li>
+            
+            <li class="md-tabs__item"><a href="https://github.com/KomputeProject/kompute/" class="md-tabs__link">Kompute Repo</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="#" title="Kompute Documentation (Python &amp; C++)" class="md-nav__button md-logo">
+      
+        <img src="_static/" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="#"
+       title="Kompute Documentation (Python &amp; C++)">Kompute Documentation (Python & C++)</a>
+  </label>
+    <div class="md-nav__source">
+      <a href="https://github.com/KomputeProject/kompute/" title="Go to repository" class="md-source" data-md-source="github">
+
+    <div class="md-source__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="28" height="28">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    Kompute
+  </div>
+</a>
+    </div>
+  
+  
+
+  
+  <ul class="md-nav__list">
+    <li class="md-nav__item">
+    
+      <span class="md-nav__link caption"><span class="caption-text">C++ Documentation:</span></span>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="https://kompute.cc/" class="md-nav__link">Documentation Home</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/community.html" class="md-nav__link">Community Meetings, Discord & Links</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+      <span class="md-nav__link caption"><span class="caption-text">C++ Documentation:</span></span>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/advanced-examples.html" class="md-nav__link">C++ Examples</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/memory-management.html" class="md-nav__link">Memory Management Principles</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/build-system.html" class="md-nav__link">Build System Deep Dive</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/shaders-to-headers.html" class="md-nav__link">Processing Shaders (Online & Offline)</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/custom-operations.html" class="md-nav__link">Extending Kompute with Custom Operations</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/reference.html" class="md-nav__link">C++ Class Documentation & Reference</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="https://kompute.cc/codecov/" class="md-nav__link">Test Code Coverage</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+      <span class="md-nav__link caption"><span class="caption-text">Python Documentation:</span></span>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/python-package.html" class="md-nav__link">Python Package Overview</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/python-reference.html" class="md-nav__link">Python Class Documentation & Reference</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+      <span class="md-nav__link caption"><span class="caption-text">Examples:</span></span>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/python-examples.html" class="md-nav__link">Python Examples</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/advanced-examples.html" class="md-nav__link">C++ Examples</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/mobile-android.html" class="md-nav__link">Android Mobile App Integration</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/raspberry-pi.html" class="md-nav__link">Edge Device Raspberry Pi Mesa Drivers</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/game-engine-godot.html" class="md-nav__link">Game Engine Godot Integration</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/matmul-benchmark.html" class="md-nav__link">Example Benchmark with Matrix Multiplication</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/convolutional-net.html" class="md-nav__link">Convolutional Neural Network (CNN) Simple Upscale</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+      <span class="md-nav__link caption"><span class="caption-text">Advanced Concepts &amp; Deep Dives:</span></span>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/ci-tests.html" class="md-nav__link">CI, Docker Images Docs & Tests</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/variable-types.html" class="md-nav__link">Variable Types for Tensors, and Push/Spec Constants</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="overview/async-parallel.html" class="md-nav__link">Asynchronous & Parallel Operations</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="genindex.html" class="md-nav__link">Code Index</a>
+      
+    
+    </li>
+  </ul>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">Contents</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#index--page-root" class="md-nav__link">Kompute Docs Home</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#high-level-overview-from-readme" class="md-nav__link">High Level Overview (from README)</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#kompute-is-backed-by-the-linux-foundation-as-a-a-href-https-lfaidata-foundation-blog-2021-08-26-kompute-joins-lf-ai-data-as-new-sandbox-project-hosted-project-a-by-the-lf-ai-data-foundation" class="md-nav__link">Kompute is backed by the Linux Foundation as a <span class="raw-html-m2r"><a href="https://lfaidata.foundation/blog/2021/08/26/kompute-joins-lf-ai-data-as-new-sandbox-project/">hosted project</a></span> by the LF AI & Data Foundation.</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#principles-features" class="md-nav__link">Principles & Features</a>
+        </li>
+        <li class="md-nav__item"><a href="#projects-using-kompute" class="md-nav__link">Projects using Kompute ❤️  🤖</a>
+        </li>
+        <li class="md-nav__item"><a href="#getting-started" class="md-nav__link">Getting Started</a>
+        </li>
+        <li class="md-nav__item"><a href="#architectural-overview" class="md-nav__link">Architectural Overview</a>
+        </li>
+        <li class="md-nav__item"><a href="#asynchronous-and-parallel-operations" class="md-nav__link">Asynchronous and Parallel Operations</a>
+        </li>
+        <li class="md-nav__item"><a href="#id1" class="md-nav__link">Mobile Enabled</a>
+        </li>
+        <li class="md-nav__item"><a href="#more-examples" class="md-nav__link">More examples</a>
+        </li>
+        <li class="md-nav__item"><a href="#id2" class="md-nav__link">Python Package</a>
+        </li>
+        <li class="md-nav__item"><a href="#c-build-overview" class="md-nav__link">C++ Build Overview</a>
+        </li>
+        <li class="md-nav__item"><a href="#kompute-development" class="md-nav__link">Kompute Development</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#updating-documentation" class="md-nav__link">Updating documentation</a>
+        </li>
+        <li class="md-nav__item"><a href="#running-tests" class="md-nav__link">Running tests</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#motivations" class="md-nav__link">Motivations</a>
+        </li>
+        <li class="md-nav__item"><a href="#documentation-index-as-per-sidebar" class="md-nav__link">Documentation Index (as per sidebar)</a>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="_sources/index.rst.txt">Show Source</a> </li>
+
+<li id="searchbox" class="md-nav__item"></li>
+
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  <section id="kompute-docs-home">
+<h1 id="index--page-root">Kompute Docs Home<a class="headerlink" href="#index--page-root" title="Link to this heading">¶</a></h1>
+<section id="high-level-overview-from-readme">
+<h2 id="high-level-overview-from-readme">High Level Overview (from README)<a class="headerlink" href="#high-level-overview-from-readme" title="Link to this heading">¶</a></h2>
+<a class="reference external image-reference" href="https://img.shields.io/badge/Version-0.7.0-green.svg"><img alt="GitHub" src="https://img.shields.io/badge/Version-0.7.0-green.svg"/>
+</a>
+<a class="reference external image-reference" href="https://img.shields.io/badge/C++-14—20-purple.svg"><img alt="GitHub" src="https://img.shields.io/badge/C++-14—20-purple.svg"/>
+</a>
+<a class="reference external image-reference" href="https://img.shields.io/badge/Build-cmake-red.svg"><img alt="GitHub" src="https://img.shields.io/badge/Build-cmake-red.svg"/>
+</a>
+<a class="reference external image-reference" href="https://img.shields.io/badge/Python-3.7—3.9-blue.svg"><img alt="GitHub" src="https://img.shields.io/badge/Python-3.7—3.9-blue.svg"/>
+</a>
+<a class="reference external image-reference" href="https://img.shields.io/badge/License-Apache-black.svg"><img alt="GitHub" src="https://img.shields.io/badge/License-Apache-black.svg"/>
+</a>
+<a class="reference external image-reference" href="https://bestpractices.coreinfrastructure.org/projects/4834"><img alt="CII Best Practices" src="https://bestpractices.coreinfrastructure.org/projects/4834/badge"/>
+</a>
+<table>
+<tr>
+<td width="20%">
+<img src="https://raw.githubusercontent.com/KomputeProject/kompute/master/docs/images/kompute.jpg"/>
+</td>
+<td>
+<h1>Kompute</h1>
+<h3>The general purpose GPU compute framework for cross vendor graphics cards (AMD, Qualcomm, NVIDIA &amp; friends)</h3>
+</td>
+</tr>
+</table><h4>Blazing fast, mobile-enabled, asynchronous, and optimized for advanced GPU acceleration usecases.</h4><p>💬 <a class="reference external" href="https://kompute.cc/overview/community.html">Join the Discord &amp; Community Calls</a> 🔋 <a class="reference external" href="https://kompute.cc">Documentation</a> 💻 <a class="reference external" href="https://medium.com/@AxSaucedo/machine-learning-and-data-processing-in-the-gpu-with-vulkan-kompute-c9350e5e5d3a">Blog Post</a> ⌨ <a class="reference external" href="#more-examples">Examples</a> 💾</p>
+<hr/><section id="kompute-is-backed-by-the-linux-foundation-as-a-a-href-https-lfaidata-foundation-blog-2021-08-26-kompute-joins-lf-ai-data-as-new-sandbox-project-hosted-project-a-by-the-lf-ai-data-foundation">
+<h3 id="kompute-is-backed-by-the-linux-foundation-as-a-a-href-https-lfaidata-foundation-blog-2021-08-26-kompute-joins-lf-ai-data-as-new-sandbox-project-hosted-project-a-by-the-lf-ai-data-foundation">Kompute is backed by the Linux Foundation as a <span class="raw-html-m2r"><a href="https://lfaidata.foundation/blog/2021/08/26/kompute-joins-lf-ai-data-as-new-sandbox-project/">hosted project</a></span> by the LF AI &amp; Data Foundation.<a class="headerlink" href="#kompute-is-backed-by-the-linux-foundation-as-a-a-href-https-lfaidata-foundation-blog-2021-08-26-kompute-joins-lf-ai-data-as-new-sandbox-project-hosted-project-a-by-the-lf-ai-data-foundation" title="Link to this heading">¶</a></h3>
+<table>
+<tr>
+<td>
+<a href="https://www.linuxfoundation.org/projects/">
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/Linux_Foundation_logo.png"/>
+</a>
+</td>
+<td>
+<a href="https://lfaidata.foundation/projects/">
+<img src="https://raw.githubusercontent.com/lfai/artwork/main/lfaidata-assets/lfaidata/horizontal/color/lfaidata-horizontal-color.png"/>
+</a>
+</td>
+</tr>
+</table></section>
+</section>
+<section id="principles-features">
+<h2 id="principles-features">Principles &amp; Features<a class="headerlink" href="#principles-features" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="#your-first-kompute-python">Flexible Python module</a> with <a class="reference external" href="#your-first-kompute-c">C++ SDK</a> for optimizations</p></li>
+<li><p><a class="reference external" href="#asynchronous-and-parallel-operations">Asynchronous &amp; parallel processing</a> support through GPU family queues</p></li>
+<li><p><a class="reference external" href="#mobile-enabled">Mobile enabled</a> with examples via Android NDK across several architectures</p></li>
+<li><p>BYOV: <a class="reference external" href="#motivations">Bring-your-own-Vulkan design</a> to play nice with existing Vulkan applications</p></li>
+<li><p>Explicit relationships for GPU and host <a class="reference external" href="https://kompute.cc/overview/memory-management.html">memory ownership and memory management</a></p></li>
+<li><p>Robust codebase with <a class="reference external" href="https://kompute.cc/codecov/">90% unit test code coverage</a></p></li>
+<li><p>Advanced use-cases on <a class="reference external" href="https://towardsdatascience.com/machine-learning-and-data-processing-in-the-gpu-with-vulkan-kompute-c9350e5e5d3a">machine learning 🤖</a>, <a class="reference external" href="https://towardsdatascience.com/gpu-accelerated-machine-learning-in-your-mobile-applications-using-the-android-ndk-vulkan-kompute-1e9da37b7617">mobile development 📱</a> and <a class="reference external" href="https://towardsdatascience.com/supercharging-game-development-with-gpu-accelerated-ml-using-vulkan-kompute-the-godot-game-engine-4e75a84ea9f0">game development 🎮</a>.</p></li>
+<li><p>Active community with <a class="reference external" href="https://kompute.cc/overview/community.html">monthly calls, discord chat and more</a></p></li>
+</ul>
+<a class="reference external image-reference" href="https://raw.githubusercontent.com/KomputeProject/kompute/master/docs/images/komputer-logos.gif"><img alt="" src="https://raw.githubusercontent.com/KomputeProject/kompute/master/docs/images/komputer-logos.gif">
+</img></a>
+</section>
+<section id="projects-using-kompute">
+<h2 id="projects-using-kompute">Projects using Kompute ❤️  🤖<a class="headerlink" href="#projects-using-kompute" title="Link to this heading">¶</a></h2>
+<ul>
+<li><p><a class="reference external" href="https://github.com/nomic-ai/gpt4all">GPT4ALL</a>
+.. image:: <a class="reference external" href="https://img.shields.io/github/stars/nomic-ai/gpt4all.svg?style=social">https://img.shields.io/github/stars/nomic-ai/gpt4all.svg?style=social</a></p>
+<blockquote>
+<div><blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">target<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://img.shields.io/github/stars/nomic-ai/gpt4all.svg?style=social">https://img.shields.io/github/stars/nomic-ai/gpt4all.svg?style=social</a></p>
+</dd>
+<dt class="field-even">alt<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+</div></blockquote>
+<ul class="simple">
+<li><p>An ecosystem of open-source on-edge large language models that run locally on your CPU and nearly any GPU.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="https://github.com/ggerganov/llama.cpp">llama.cpp</a>
+.. image:: <a class="reference external" href="https://img.shields.io/github/stars/ggerganov/llama.cpp.svg?style=social">https://img.shields.io/github/stars/ggerganov/llama.cpp.svg?style=social</a></p>
+<blockquote>
+<div><blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">target<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://img.shields.io/github/stars/ggerganov/llama.cpp.svg?style=social">https://img.shields.io/github/stars/ggerganov/llama.cpp.svg?style=social</a></p>
+</dd>
+<dt class="field-even">alt<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+</div></blockquote>
+<ul class="simple">
+<li><p>Port of Facebook’s LLaMA model in C/C++ (now decomissioned).</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="https://github.com/tpoisonooo/how-to-optimize-gemm">tpoisonooo/how-to-optimize-gemm</a>
+.. image:: <a class="reference external" href="https://img.shields.io/github/stars/tpoisonooo/how-to-optimize-gemm.svg?style=social">https://img.shields.io/github/stars/tpoisonooo/how-to-optimize-gemm.svg?style=social</a></p>
+<blockquote>
+<div><blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">target<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://img.shields.io/github/stars/tpoisonooo/how-to-optimize-gemm.svg?style=social">https://img.shields.io/github/stars/tpoisonooo/how-to-optimize-gemm.svg?style=social</a></p>
+</dd>
+<dt class="field-even">alt<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+</div></blockquote>
+<ul class="simple">
+<li><p>row-major matmul optimization.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="https://github.com/alexander-g/vkJAX">vkJAX</a>
+.. image:: <a class="reference external" href="https://img.shields.io/github/stars/alexander-g/vkJAX.svg?style=social">https://img.shields.io/github/stars/alexander-g/vkJAX.svg?style=social</a></p>
+<blockquote>
+<div><blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">target<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://img.shields.io/github/stars/alexander-g/vkJAX.svg?style=social">https://img.shields.io/github/stars/alexander-g/vkJAX.svg?style=social</a></p>
+</dd>
+<dt class="field-even">alt<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+</div></blockquote>
+<ul class="simple">
+<li><p>JAX interpreter for Vulkan.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="getting-started">
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">¶</a></h2>
+<p>Below you can find a GPU multiplication example using the C++ and Python Kompute interfaces.</p>
+<p>You can <a class="reference external" href="https://discord.gg/MaH5Jv5zwv">join the Discord</a> for questions / discussion, open a <a class="reference external" href="https://github.com/KomputeProject/kompute/issues/new">github issue</a>, or read <a class="reference external" href="https://kompute.cc/">the documentation</a>.</p>
+<p>The C++ interface provides low level access to the native components of Kompute, enabling for <a class="reference external" href="https://kompute.cc/overview/async-parallel.html">advanced optimizations</a> as well as <a class="reference external" href="https://kompute.cc/overview/reference.html">extension of components</a>.</p>
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">kompute</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span><span class="w"> </span><span class="n">shader</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="c1">// 1. Create Kompute Manager with default settings (device 0, first queue and no extensions)</span>
+<span class="w">    </span><span class="n">kp</span><span class="o">::</span><span class="n">Manager</span><span class="w"> </span><span class="n">mgr</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// 2. Create and initialise Kompute Tensors through manager</span>
+
+<span class="w">    </span><span class="c1">// Default tensor constructor simplifies creation of float values</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">tensorInA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mgr</span><span class="p">.</span><span class="n">tensor</span><span class="p">({</span><span class="w"> </span><span class="mf">2.</span><span class="p">,</span><span class="w"> </span><span class="mf">2.</span><span class="p">,</span><span class="w"> </span><span class="mf">2.</span><span class="w"> </span><span class="p">});</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">tensorInB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mgr</span><span class="p">.</span><span class="n">tensor</span><span class="p">({</span><span class="w"> </span><span class="mf">1.</span><span class="p">,</span><span class="w"> </span><span class="mf">2.</span><span class="p">,</span><span class="w"> </span><span class="mf">3.</span><span class="w"> </span><span class="p">});</span>
+<span class="w">    </span><span class="c1">// Explicit type constructor supports uint32, int32, double, float and bool</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">tensorOutA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mgr</span><span class="p">.</span><span class="n">tensorT</span><span class="o">&lt;</span><span class="kt">uint32_t</span><span class="o">&gt;</span><span class="p">({</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">});</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">tensorOutB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mgr</span><span class="p">.</span><span class="n">tensorT</span><span class="o">&lt;</span><span class="kt">uint32_t</span><span class="o">&gt;</span><span class="p">({</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">});</span>
+
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">kp</span><span class="o">::</span><span class="n">Memory</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="n">tensorInA</span><span class="p">,</span><span class="w"> </span><span class="n">tensorInB</span><span class="p">,</span><span class="w"> </span><span class="n">tensorOutA</span><span class="p">,</span><span class="w"> </span><span class="n">tensorOutB</span><span class="p">};</span>
+
+<span class="w">    </span><span class="c1">// 3. Create algorithm based on shader (supports buffers &amp; push/spec constants)</span>
+<span class="w">    </span><span class="n">kp</span><span class="o">::</span><span class="n">Workgroup</span><span class="w"> </span><span class="n">workgroup</span><span class="p">({</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">});</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="w"> </span><span class="n">specConsts</span><span class="p">({</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">});</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="w"> </span><span class="n">pushConstsA</span><span class="p">({</span><span class="w"> </span><span class="mf">2.0</span><span class="w"> </span><span class="p">});</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span><span class="w"> </span><span class="n">pushConstsB</span><span class="p">({</span><span class="w"> </span><span class="mf">3.0</span><span class="w"> </span><span class="p">});</span>
+
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">algorithm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mgr</span><span class="p">.</span><span class="n">algorithm</span><span class="p">(</span><span class="n">params</span><span class="p">,</span>
+<span class="w">                                   </span><span class="c1">// See documentation shader section for compileSource</span>
+<span class="w">                                   </span><span class="n">compileSource</span><span class="p">(</span><span class="n">shader</span><span class="p">),</span>
+<span class="w">                                   </span><span class="n">workgroup</span><span class="p">,</span>
+<span class="w">                                   </span><span class="n">specConsts</span><span class="p">,</span>
+<span class="w">                                   </span><span class="n">pushConstsA</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// 4. Run operation synchronously using sequence</span>
+<span class="w">    </span><span class="n">mgr</span><span class="p">.</span><span class="n">sequence</span><span class="p">()</span>
+<span class="w">        </span><span class="o">-&gt;</span><span class="n">record</span><span class="o">&lt;</span><span class="n">kp</span><span class="o">::</span><span class="n">OpSyncDevice</span><span class="o">&gt;</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+<span class="w">        </span><span class="o">-&gt;</span><span class="n">record</span><span class="o">&lt;</span><span class="n">kp</span><span class="o">::</span><span class="n">OpAlgoDispatch</span><span class="o">&gt;</span><span class="p">(</span><span class="n">algorithm</span><span class="p">)</span><span class="w"> </span><span class="c1">// Binds default push consts</span>
+<span class="w">        </span><span class="o">-&gt;</span><span class="n">eval</span><span class="p">()</span><span class="w"> </span><span class="c1">// Evaluates the two recorded operations</span>
+<span class="w">        </span><span class="o">-&gt;</span><span class="n">record</span><span class="o">&lt;</span><span class="n">kp</span><span class="o">::</span><span class="n">OpAlgoDispatch</span><span class="o">&gt;</span><span class="p">(</span><span class="n">algorithm</span><span class="p">,</span><span class="w"> </span><span class="n">pushConstsB</span><span class="p">)</span><span class="w"> </span><span class="c1">// Overrides push consts</span>
+<span class="w">        </span><span class="o">-&gt;</span><span class="n">eval</span><span class="p">();</span><span class="w"> </span><span class="c1">// Evaluates only last recorded operation</span>
+
+<span class="w">    </span><span class="c1">// 5. Sync results from the GPU asynchronously</span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">sq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mgr</span><span class="p">.</span><span class="n">sequence</span><span class="p">();</span>
+<span class="w">    </span><span class="n">sq</span><span class="o">-&gt;</span><span class="n">evalAsync</span><span class="o">&lt;</span><span class="n">kp</span><span class="o">::</span><span class="n">OpSyncLocal</span><span class="o">&gt;</span><span class="p">(</span><span class="n">params</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// ... Do other work asynchronously whilst GPU finishes</span>
+
+<span class="w">    </span><span class="n">sq</span><span class="o">-&gt;</span><span class="n">evalAwait</span><span class="p">();</span>
+
+<span class="w">    </span><span class="c1">// Prints the first output which is: { 4, 8, 12 }</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="o">&amp;</span><span class="w"> </span><span class="n">elem</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">tensorOutA</span><span class="o">-&gt;</span><span class="n">vector</span><span class="p">())</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">elem</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"  "</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">// Prints the second output which is: { 10, 10, 10 }</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="o">&amp;</span><span class="w"> </span><span class="n">elem</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">tensorOutB</span><span class="o">-&gt;</span><span class="n">vector</span><span class="p">())</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">elem</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"  "</span><span class="p">;</span>
+
+<span class="p">}</span><span class="w"> </span><span class="c1">// Manages / releases all CPU and GPU memory resources</span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+
+<span class="w">    </span><span class="c1">// Define a raw string shader (or use the Kompute tools to compile to SPIRV / C++ header</span>
+<span class="w">    </span><span class="c1">// files). This shader shows some of the main components including constants, buffers, etc</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">shader</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="sa">R</span><span class="s">"</span><span class="dl">(</span>
+<span class="s">        #version 450</span>
+
+<span class="s">        layout (local_size_x = 1) in;</span>
+
+<span class="s">        // The input tensors bind index is relative to index in parameter passed</span>
+<span class="s">        layout(set = 0, binding = 0) buffer buf_in_a { float in_a[]; };</span>
+<span class="s">        layout(set = 0, binding = 1) buffer buf_in_b { float in_b[]; };</span>
+<span class="s">        layout(set = 0, binding = 2) buffer buf_out_a { uint out_a[]; };</span>
+<span class="s">        layout(set = 0, binding = 3) buffer buf_out_b { uint out_b[]; };</span>
+
+<span class="s">        // Kompute supports push constants updated on dispatch</span>
+<span class="s">        layout(push_constant) uniform PushConstants {</span>
+<span class="s">            float val;</span>
+<span class="s">        } push_const;</span>
+
+<span class="s">        // Kompute also supports spec constants on initalization</span>
+<span class="s">        layout(constant_id = 0) const float const_one = 0;</span>
+
+<span class="s">        void main() {</span>
+<span class="s">            uint index = gl_GlobalInvocationID.x;</span>
+<span class="s">            out_a[index] += uint( in_a[index] * in_b[index] );</span>
+<span class="s">            out_b[index] += uint( const_one * push_const.val );</span>
+<span class="s">        }</span>
+<span class="s">    </span><span class="dl">)</span><span class="s">"</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// Run the function declared above with our raw string shader</span>
+<span class="w">    </span><span class="n">kompute</span><span class="p">(</span><span class="n">shader</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The <a class="reference external" href="https://kompute.cc/overview/python-package.html">Python package</a> provides a <a class="reference external" href="https://kompute.cc/overview/python-reference.html">high level interactive interface</a> that enables for experimentation whilst ensuring high performance and fast development workflows.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">compile_source</span> <span class="c1"># using util function from python/test/utils</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">kompute</span><span class="p">(</span><span class="n">shader</span><span class="p">):</span>
+    <span class="c1"># 1. Create Kompute Manager with default settings (device 0, first queue and no extensions)</span>
+    <span class="n">mgr</span> <span class="o">=</span> <span class="n">kp</span><span class="o">.</span><span class="n">Manager</span><span class="p">()</span>
+
+    <span class="c1"># 2. Create and initialise Kompute Tensors through manager</span>
+
+    <span class="c1"># Default tensor constructor simplifies creation of float values</span>
+    <span class="n">tensor_in_a</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+    <span class="n">tensor_in_b</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+    <span class="c1"># Explicit type constructor supports uint32, int32, double, float and bool</span>
+    <span class="n">tensor_out_a</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor_t</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint32</span><span class="p">))</span>
+    <span class="n">tensor_out_b</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">tensor_t</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint32</span><span class="p">))</span>
+    <span class="k">assert</span><span class="p">(</span><span class="n">t_data</span><span class="o">.</span><span class="n">data_type</span><span class="p">()</span> <span class="o">==</span> <span class="n">kp</span><span class="o">.</span><span class="n">DataTypes</span><span class="o">.</span><span class="n">uint</span><span class="p">)</span>
+
+    <span class="n">params</span> <span class="o">=</span> <span class="p">[</span><span class="n">tensor_in_a</span><span class="p">,</span> <span class="n">tensor_in_b</span><span class="p">,</span> <span class="n">tensor_out_a</span><span class="p">,</span> <span class="n">tensor_out_b</span><span class="p">]</span>
+
+    <span class="c1"># 3. Create algorithm based on shader (supports buffers &amp; push/spec constants)</span>
+    <span class="n">workgroup</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">spec_consts</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">push_consts_a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">push_consts_b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+
+    <span class="c1"># See documentation shader section for compile_source</span>
+    <span class="n">spirv</span> <span class="o">=</span> <span class="n">compile_source</span><span class="p">(</span><span class="n">shader</span><span class="p">)</span>
+
+    <span class="n">algo</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">algorithm</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">spirv</span><span class="p">,</span> <span class="n">workgroup</span><span class="p">,</span> <span class="n">spec_consts</span><span class="p">,</span> <span class="n">push_consts_a</span><span class="p">)</span>
+
+    <span class="c1"># 4. Run operation synchronously using sequence</span>
+    <span class="p">(</span><span class="n">mgr</span><span class="o">.</span><span class="n">sequence</span><span class="p">()</span>
+        <span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpTensorSyncDevice</span><span class="p">(</span><span class="n">params</span><span class="p">))</span>
+        <span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpAlgoDispatch</span><span class="p">(</span><span class="n">algo</span><span class="p">))</span> <span class="c1"># Binds default push consts provided</span>
+        <span class="o">.</span><span class="n">eval</span><span class="p">()</span> <span class="c1"># evaluates the two recorded ops</span>
+        <span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpAlgoDispatch</span><span class="p">(</span><span class="n">algo</span><span class="p">,</span> <span class="n">push_consts_b</span><span class="p">))</span> <span class="c1"># Overrides push consts</span>
+        <span class="o">.</span><span class="n">eval</span><span class="p">())</span> <span class="c1"># evaluates only the last recorded op</span>
+
+    <span class="c1"># 5. Sync results from the GPU asynchronously</span>
+    <span class="n">sq</span> <span class="o">=</span> <span class="n">mgr</span><span class="o">.</span><span class="n">sequence</span><span class="p">()</span>
+    <span class="n">sq</span><span class="o">.</span><span class="n">eval_async</span><span class="p">(</span><span class="n">kp</span><span class="o">.</span><span class="n">OpTensorSyncLocal</span><span class="p">(</span><span class="n">params</span><span class="p">))</span>
+
+    <span class="c1"># ... Do other work asynchronously whilst GPU finishes</span>
+
+    <span class="n">sq</span><span class="o">.</span><span class="n">eval_await</span><span class="p">()</span>
+
+    <span class="c1"># Prints the first output which is: { 4, 8, 12 }</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">tensor_out_a</span><span class="p">)</span>
+    <span class="c1"># Prints the first output which is: { 10, 10, 10 }</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">tensor_out_b</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+
+    <span class="c1"># Define a raw string shader (or use the Kompute tools to compile to SPIRV / C++ header</span>
+    <span class="c1"># files). This shader shows some of the main components including constants, buffers, etc</span>
+    <span class="n">shader</span> <span class="o">=</span> <span class="s2">"""</span>
+<span class="s2">        #version 450</span>
+
+<span class="s2">        layout (local_size_x = 1) in;</span>
+
+<span class="s2">        // The input tensors bind index is relative to index in parameter passed</span>
+<span class="s2">        layout(set = 0, binding = 0) buffer buf_in_a { float in_a[]; };</span>
+<span class="s2">        layout(set = 0, binding = 1) buffer buf_in_b { float in_b[]; };</span>
+<span class="s2">        layout(set = 0, binding = 2) buffer buf_out_a { uint out_a[]; };</span>
+<span class="s2">        layout(set = 0, binding = 3) buffer buf_out_b { uint out_b[]; };</span>
+
+<span class="s2">        // Kompute supports push constants updated on dispatch</span>
+<span class="s2">        layout(push_constant) uniform PushConstants {</span>
+<span class="s2">            float val;</span>
+<span class="s2">        } push_const;</span>
+
+<span class="s2">        // Kompute also supports spec constants on initalization</span>
+<span class="s2">        layout(constant_id = 0) const float const_one = 0;</span>
+
+<span class="s2">        void main() {</span>
+<span class="s2">            uint index = gl_GlobalInvocationID.x;</span>
+<span class="s2">            out_a[index] += uint( in_a[index] * in_b[index] );</span>
+<span class="s2">            out_b[index] += uint( const_one * push_const.val );</span>
+<span class="s2">        }</span>
+<span class="s2">    """</span>
+
+    <span class="n">kompute</span><span class="p">(</span><span class="n">shader</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You are able to try out the interactive Colab Notebooks which allow you to use a free GPU. The available examples are the Python and C++ examples below:</p>
+<table>
+<tr>
+<td width="50%">
+<h5>Try the interactive <a href="https://colab.research.google.com/drive/1l3hNSq2AcJ5j2E3YIw__jKy5n6M615GP?usp=sharing">C++ Colab</a> from <a href="https://towardsdatascience.com/machine-learning-and-data-processing-in-the-gpu-with-vulkan-kompute-c9350e5e5d3a">Blog Post</a></h5>
+</td>
+<td>
+<h5>Try the interactive <a href="https://colab.research.google.com/drive/15uQ7qMZuOyk8JcXF-3SB2R5yNFW21I4P">Python Colab</a> from <a href="https://towardsdatascience.com/beyond-cuda-gpu-accelerated-python-for-machine-learning-in-cross-vendor-graphics-cards-made-simple-6cc828a45cc3">Blog Post</a></h5>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<a href="https://colab.research.google.com/drive/1l3hNSq2AcJ5j2E3YIw__jKy5n6M615GP?authuser=1#scrollTo=1BipBsO-fQRD">
+<img src="https://raw.githubusercontent.com/KomputeProject/kompute/master/docs/images/binder-cpp.jpg"/>
+</a>
+</td>
+<td>
+<a href="https://colab.research.google.com/drive/15uQ7qMZuOyk8JcXF-3SB2R5yNFW21I4P">
+<img src="https://raw.githubusercontent.com/KomputeProject/kompute/master/docs/images/binder-python.jpg"/>
+</a>
+</td>
+</tr>
+</table><p>You can also check out the two following talks presented at the FOSDEM 2021 conference.</p>
+<p>Both videos have timestamps which will allow you to skip to the most relevant section for you - the intro &amp; motivations for both is almost the same so you can skip to the more specific content.</p>
+<table>
+<tr>
+<td width="50%">
+<h5>Watch the video for <a href="https://www.youtube.com/watch?v=Xz4fiQNmGSA">C++ Enthusiasts</a> </h5>
+</td>
+<td>
+<h5>Watch the video for <a href="https://www.youtube.com/watch?v=AJRyZ09IUdg">Python &amp; Machine Learning</a> Enthusiasts</h5>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<a href="https://www.youtube.com/watch?v=Xz4fiQNmGSA">
+<img src="https://raw.githubusercontent.com/KomputeProject/kompute/master/docs/images/kompute-cpp-video.png"/>
+</a>
+</td>
+<td>
+<a href="https://www.youtube.com/watch?v=AJRyZ09IUdg">
+<img src="https://raw.githubusercontent.com/KomputeProject/kompute/master/docs/images/kompute-python-video.png"/>
+</a>
+</td>
+</tr>
+</table></section>
+<section id="architectural-overview">
+<h2 id="architectural-overview">Architectural Overview<a class="headerlink" href="#architectural-overview" title="Link to this heading">¶</a></h2>
+<p>The core architecture of Kompute includes the following:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://kompute.cc/overview/reference.html#manager">Kompute Manager</a> - Base orchestrator which creates and manages device and child components</p></li>
+<li><p><a class="reference external" href="https://kompute.cc/overview/reference.html#sequence">Kompute Sequence</a> - Container of operations that can be sent to GPU as batch</p></li>
+<li><p><a class="reference external" href="https://kompute.cc/overview/reference.html#algorithm">Kompute Operation (Base)</a> - Base class from which all operations inherit</p></li>
+<li><p><a class="reference external" href="https://kompute.cc/overview/reference.html#tensor">Kompute Tensor</a> - Tensor structured data used in GPU operations</p></li>
+<li><p><a class="reference external" href="https://kompute.cc/overview/reference.html#algorithm">Kompute Algorithm</a> - Abstraction for (shader) logic executed in the GPU</p></li>
+</ul>
+<p>To see a full breakdown you can read further in the <a class="reference external" href="https://kompute.cc/overview/reference.html">C++ Class Reference</a>.</p>
+<table>
+<th>
+Full Architecture
+</th>
+<th>
+Simplified Kompute Components
+</th>
+<tr>
+<td width="30%">
+<img src="https://raw.githubusercontent.com/KomputeProject/kompute/master/docs/images/kompute-vulkan-architecture.jpg" width="100%"/>
+<br/>
+<br/>
+(very tiny, check the <a href="https://ethicalml.github.io/vulkan-kompute/overview/reference.html">full reference diagram in docs for details</a>)
+<br/>
+<br/>
+<img src="https://raw.githubusercontent.com/KomputeProject/kompute/master/docs/images/suspicious.jfif" width="100%"/>
+</td>
+<td>
+<img src="https://raw.githubusercontent.com/KomputeProject/kompute/master/docs/images/kompute-architecture.jpg" width="100%"/>
+</td>
+</tr>
+</table></section>
+<section id="asynchronous-and-parallel-operations">
+<h2 id="asynchronous-and-parallel-operations">Asynchronous and Parallel Operations<a class="headerlink" href="#asynchronous-and-parallel-operations" title="Link to this heading">¶</a></h2>
+<p>Kompute provides flexibility to run operations in an asynrchonous way through vk::Fences. Furthermore, Kompute enables for explicit allocation of queues, which allow for parallel execution of operations across queue families.</p>
+<p>The image below provides an intuition on how Kompute Sequences can be allocated to different queues to enable parallel execution based on hardware. You can see the <a class="reference external" href="https://kompute.cc/overview/advanced-examples.html#parallel-operations">hands on example</a>, as well as the <a class="reference external" href="https://kompute.cc/overview/async-parallel.html">detailed documentation page</a> describing how it would work using an NVIDIA 1650 as an example.</p>
+<a class="reference external image-reference" href="https://raw.githubusercontent.com/KomputeProject/kompute/master/docs/images/queue-allocation.jpg"><img alt="" src="https://raw.githubusercontent.com/KomputeProject/kompute/master/docs/images/queue-allocation.jpg">
+</img></a>
+</section>
+<section id="id1">
+<h2 id="id1">Mobile Enabled<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<p>Kompute has been optimized to work in mobile environments. The <a class="reference external" href="#build-overview">build system</a> enables for dynamic loading of the Vulkan shared library for Android environments, together with a working <a class="reference external" href="https://github.com/KomputeProject/kompute/tree/master/vk_ndk_wrapper_include">Android NDK wrapper</a> for the CPP headers.</p>
+<table>
+<tr>
+<td width="70%">
+<p>
+For a full deep dive you can read the blog post "<a href="https://towardsdatascience.com/gpu-accelerated-machine-learning-in-your-mobile-applications-using-the-android-ndk-vulkan-kompute-1e9da37b7617">Supercharging your Mobile Apps with On-Device GPU Accelerated Machine Learning</a>".
+
+You can also access the <a href="https://github.com/KomputeProject/kompute/tree/v0.4.0/examples/android/android-simple">end-to-end example code</a> in the repository, which can be run using android studio.
+
+</p>
+<img src="https://raw.githubusercontent.com/KomputeProject/kompute/android-example/docs/images/android-editor.jpg"/>
+</td>
+<td width="30%">
+<img src="https://raw.githubusercontent.com/KomputeProject/kompute/android-example/docs/images/android-kompute.jpg"/>
+</td>
+</tr>
+</table></section>
+<section id="more-examples">
+<h2 id="more-examples">More examples<a class="headerlink" href="#more-examples" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://kompute.cc/overview/advanced-examples.html#simple-shader-example">Simple multiplication example</a></p></li>
+<li><p><a class="reference external" href="https://kompute.cc/overview/advanced-examples.html#record-batch-commands">Record batch commands with a Kompute Sequence</a></p></li>
+<li><p><a class="reference external" href="https://kompute.cc/overview/advanced-examples.html#asynchronous-operations">Run Asynchronous Operations</a></p></li>
+<li><p><a class="reference external" href="https://kompute.cc/overview/advanced-examples.html#parallel-operations">Run Parallel Operations Across Multiple GPU Queues</a></p></li>
+<li><p><a class="reference external" href="https://kompute.cc/overview/advanced-examples.html#your-custom-kompute-operation">Create your custom Kompute Operations</a></p></li>
+<li><p><a class="reference external" href="https://kompute.cc/overview/advanced-examples.html#logistic-regression-example">Implementing logistic regression from scratch</a></p></li>
+</ul>
+<ul class="simple">
+<li><p><a class="reference external" href="https://towardsdatascience.com/machine-learning-and-data-processing-in-the-gpu-with-vulkan-kompute-c9350e5e5d3a">Machine Learning Logistic Regression Implementation</a></p></li>
+<li><p><a class="reference external" href="https://towardsdatascience.com/parallelizing-heavy-gpu-workloads-via-multi-queue-operations-50a38b15a1dc">Parallelizing GPU-intensive Workloads via Multi-Queue Operations</a></p></li>
+<li><p><a class="reference external" href="https://towardsdatascience.com/gpu-accelerated-machine-learning-in-your-mobile-applications-using-the-android-ndk-vulkan-kompute-1e9da37b7617">Android NDK Mobile Kompute ML Application</a></p></li>
+<li><p><a class="reference external" href="https://towardsdatascience.com/supercharging-game-development-with-gpu-accelerated-ml-using-vulkan-kompute-the-godot-game-engine-4e75a84ea9f0">Game Development Kompute ML in Godot Engine</a></p></li>
+</ul>
+</section>
+<section id="id2">
+<h2 id="id2">Python Package<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<p>Besides the C++ core SDK you can also use the Python package of Kompute, which exposes the same core functionality, and supports interoperability with Python objects like Lists, Numpy Arrays, etc.</p>
+<p>The only dependencies are Python 3.5+ and Cmake 3.4.1+. You can install Kompute from the <a class="reference external" href="https://pypi.org/project/kp/">Python pypi package</a> using the following command.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">kp</span>
+</pre></div>
+</div>
+<p>You can also install from master branch using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">git</span><span class="o">+</span><span class="n">git</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">KomputeProject</span><span class="o">/</span><span class="n">kompute</span><span class="o">.</span><span class="n">git</span><span class="nd">@master</span>
+</pre></div>
+</div>
+<p>For further details you can read the <a class="reference external" href="https://kompute.cc/overview/python-package.html">Python Package documentation</a> or the <a class="reference external" href="https://kompute.cc/overview/python-reference.html">Python Class Reference documentation</a>.</p>
+</section>
+<section id="c-build-overview">
+<h2 id="c-build-overview">C++ Build Overview<a class="headerlink" href="#c-build-overview" title="Link to this heading">¶</a></h2>
+<p>The build system provided uses <code class="docutils literal notranslate"><span class="pre">cmake</span></code>, which allows for cross platform builds.</p>
+<p>The top level <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> provides a set of optimized configurations for development as well as the docker image build, but you can start a build with the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">Bbuild</span>
+</pre></div>
+</div>
+<p>You also are able to add Kompute in your repo with <code class="docutils literal notranslate"><span class="pre">add_subdirectory</span></code> - the <a class="reference external" href="https://github.com/KomputeProject/kompute/blob/7c8c0eeba2cdc098349fcd999102bb2cca1bf711/examples/android/android-simple/app/src/main/cpp/CMakeLists.txt#L3">Android example CMakeLists.txt file</a> shows how this would be done.</p>
+<p>For a more advanced overview of the build configuration check out the <a class="reference external" href="https://kompute.cc/overview/build-system.html">Build System Deep Dive</a> documentation.</p>
+</section>
+<section id="kompute-development">
+<h2 id="kompute-development">Kompute Development<a class="headerlink" href="#kompute-development" title="Link to this heading">¶</a></h2>
+<p>We appreciate PRs and Issues. If you want to contribute try checking the “Good first issue” tag, but even using Kompute and reporting issues is a great contribution!</p>
+<ul class="simple">
+<li><p>Testing</p>
+<ul>
+<li><p>GTest</p></li>
+</ul>
+</li>
+<li><p>Documentation</p>
+<ul>
+<li><p>Doxygen (with Dot)</p></li>
+<li><p>Sphynx</p></li>
+</ul>
+</li>
+</ul>
+<ul class="simple">
+<li><p>Follows Mozilla C++ Style Guide <a class="reference external" href="https://www-archive.mozilla.org/hacking/mozilla-style-guide.html">https://www-archive.mozilla.org/hacking/mozilla-style-guide.html</a></p>
+<ul>
+<li><p>Uses post-commit hook to run the linter, you can set it up so it runs the linter before commit</p></li>
+<li><p>All dependencies are defined in vcpkg.json</p></li>
+</ul>
+</li>
+<li><p>Uses cmake as build system, and provides a top level makefile with recommended command</p></li>
+<li><p>Uses xxd (or xxd.exe windows 64bit port) to convert shader spirv to header files</p></li>
+<li><p>Uses doxygen and sphinx for documentation and autodocs</p></li>
+<li><p>Uses vcpkg for finding the dependencies, it’s the recommended set up to retrieve the libraries</p></li>
+</ul>
+<p>If you want to run with debug layers you can add them with the <code class="docutils literal notranslate"><span class="pre">KOMPUTE_ENV_DEBUG_LAYERS</span></code> parameter as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">KOMPUTE_ENV_DEBUG_LAYERS</span><span class="o">=</span><span class="s2">"VK_LAYER_LUNARG_api_dump"</span>
+</pre></div>
+</div>
+<section id="updating-documentation">
+<h3 id="updating-documentation">Updating documentation<a class="headerlink" href="#updating-documentation" title="Link to this heading">¶</a></h3>
+<p>To update the documentation you will need to:</p>
+<ul class="simple">
+<li><p>Run the gendoxygen target in the build system</p></li>
+<li><p>Run the gensphynx target in the build-system</p></li>
+<li><p>Push to github pages with <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">push_docs_to_ghpages</span></code></p></li>
+</ul>
+</section>
+<section id="running-tests">
+<h3 id="running-tests">Running tests<a class="headerlink" href="#running-tests" title="Link to this heading">¶</a></h3>
+<p>Running the unit tests has been significantly simplified for contributors.</p>
+<p>The tests run on CPU, and can be triggered using the ACT command line interface (<a class="reference external" href="https://github.com/nektos/act">https://github.com/nektos/act</a>) - once you install the command line (And start the Docker daemon) you just have to type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ act
+
+[Python Tests/python-tests] 🚀  Start image=axsauze/kompute-builder:0.2
+[C++ Tests/cpp-tests      ] 🚀  Start image=axsauze/kompute-builder:0.2
+[C++ Tests/cpp-tests      ]   🐳  docker run image=axsauze/kompute-builder:0.2 entrypoint=["/usr/bin/tail" "-f" "/dev/null"] cmd=[]
+[Python Tests/python-tests]   🐳  docker run image=axsauze/kompute-builder:0.2 entrypoint=["/usr/bin/tail" "-f" "/dev/null"] cmd=[]
+...
+</pre></div>
+</div>
+<p>The repository contains unit tests for the C++ and Python code, and can be found under the <code class="docutils literal notranslate"><span class="pre">test/</span></code> and <code class="docutils literal notranslate"><span class="pre">python/test</span></code> folder.</p>
+<p>The tests are currently run through the CI using Github Actions. It uses the images found in <code class="docutils literal notranslate"><span class="pre">docker-builders/</span></code>.</p>
+<p>In order to minimise hardware requirements the tests can run without a GPU, directly in the CPU using <a class="reference external" href="https://github.com/google/swiftshader">Swiftshader</a>.</p>
+<p>For more information on how the CI and tests are setup, you can go to the <a class="reference external" href="https://kompute.cc/overview/ci-tests.html">CI, Docker and Tests Section</a> in the documentation.</p>
+</section>
+</section>
+<section id="motivations">
+<h2 id="motivations">Motivations<a class="headerlink" href="#motivations" title="Link to this heading">¶</a></h2>
+<p>This project started after seeing that a lot of new and renowned ML &amp; DL projects like Pytorch, Tensorflow, Alibaba DNN, Tencent NCNN - among others - have either integrated or are looking to integrate the Vulkan SDK to add mobile (and cross-vendor) GPU support.</p>
+<p>The Vulkan SDK offers a great low level interface that enables for highly specialized optimizations - however it comes at a cost of highly verbose code which requires 500-2000 lines of code to even begin writing application code. This has resulted in each of these projects having to implement the same baseline to abstract the non-compute related features of the Vulkan SDK. This large amount of non-standardised boiler-plate can result in limited knowledge transfer, higher chance of unique framework implementation bugs being introduced, etc.</p>
+<p>We are currently developing Kompute not to hide the Vulkan SDK interface (as it’s incredibly well designed) but to augment it with a direct focus on the Vulkan SDK’s GPU computing capabilities. <a class="reference external" href="https://towardsdatascience.com/machine-learning-and-data-processing-in-the-gpu-with-vulkan-kompute-c9350e5e5d3a">This article</a> provides a high level overview of the motivations of Kompute, together with a set of hands on examples that introduce both GPU computing as well as the core Kompute architecture.</p>
+</section>
+<section id="documentation-index-as-per-sidebar">
+<h2 id="documentation-index-as-per-sidebar">Documentation Index (as per sidebar)<a class="headerlink" href="#documentation-index-as-per-sidebar" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">C++ Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://kompute.cc/">Documentation Home</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/community.html">Community Meetings, Discord &amp; Links</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">C++ Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview/advanced-examples.html">C++ Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/memory-management.html">Memory Management Principles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/build-system.html">Build System Deep Dive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/shaders-to-headers.html">Processing Shaders (Online &amp; Offline)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/custom-operations.html">Extending Kompute with Custom Operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/reference.html">C++ Class Documentation &amp; Reference</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://kompute.cc/codecov/">Test Code Coverage</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Python Documentation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview/python-package.html">Python Package Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/python-reference.html">Python Class Documentation &amp; Reference</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Examples:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview/python-examples.html">Python Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/advanced-examples.html">C++ Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/mobile-android.html">Android Mobile App Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/raspberry-pi.html">Edge Device Raspberry Pi Mesa Drivers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/game-engine-godot.html">Game Engine Godot Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/matmul-benchmark.html">Example Benchmark with Matrix Multiplication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/convolutional-net.html">Convolutional Neural Network (CNN) Simple Upscale</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Advanced Concepts &amp; Deep Dives:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview/ci-tests.html">CI, Docker Images Docs &amp; Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/variable-types.html">Variable Types for Tensors, and Push/Spec Constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview/async-parallel.html">Asynchronous &amp; Parallel Operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Code Index</a></li>
+</ul>
+</div>
+</section>
+</section>
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+          
+            <a href="overview/community.html" title="Community Meetings, Channels &amp; Resources"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> Next </span> Community Meetings, Channels &amp; Resources </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2020, The Institute for Ethical AI &amp; Machine Learning.
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 9.0.4.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>
